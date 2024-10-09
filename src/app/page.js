@@ -44,7 +44,7 @@ export default function Home() {
       {connection && (
         <div style={{ marginTop: '20px' }}>
           <h2>Estado de la conexión:</h2>
-          <p>{connection.getStatus()}</p> {/* Mostramos el estado de la conexión */}
+          <p>{connection.getStatus().split(" ")[0]} {type}</p> {/* Mostramos el estado de la conexión */}
         </div>
       )}
     </div>
